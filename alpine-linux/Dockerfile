@@ -1,5 +1,4 @@
-FROM openjdk:8-jdk
-WORKDIR /app
+FROM openjdk:8-alpine
 COPY App.java .
 RUN javac App.java
-CMD ["java", "App"]
+CMD ["java","App"]
